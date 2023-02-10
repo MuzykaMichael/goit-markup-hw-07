@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 .container {
-    width:1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    width:100%;
+    margin: 0;
+    padding: 0 16px;
 }
 h1, 
 h2, 
@@ -162,33 +162,34 @@ img {
         rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office1.jpg);
-    background-size: 1440px;
+    background-size: cover;
     background-position:center;
     background-repeat:no-repeat;
-    padding: 188px 0;
+    padding: 112px 0;
 }
 .hero-title {
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 40px;
+    /* or 111% */
+    
     text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    
     color: #FFFFFF;
-    margin-bottom:48px;
-    width:500px;
+    margin-bottom:72px;
+    width:320px;
     margin-left:auto;
     margin-right:auto;
     
 }
 
 .hero-button {
-    width: 169px;
-    height: 56px;
-    left: 636px;
-    top: 428px;
+
     color: #FFFFFF;
     background: #4D5AE5;
     border: 0px;
@@ -200,9 +201,16 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    
+    color: #FFFFFF;
+    
     padding: 16px 32px;
-    margin-right:495px;
-    margin-left:494px;
+    margin: 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
@@ -214,7 +222,7 @@ img {
 }
 .secondary {
     background-color: #FFFFFF;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .secondary-title {
     font-family: 'Roboto';
@@ -236,7 +244,8 @@ img {
 .secondary-list {
     list-style-type:none;
     display:flex;
-    gap:24px;
+    flex-direction: column;
+    gap:72px;
 }
 .secondary-item {
 }
@@ -247,6 +256,7 @@ img {
     width: 264px;
     height:112px;
     background-color: #F4F4FD;
+    display:none;
 }
 .secondary-item-icon {
 }
@@ -254,15 +264,17 @@ img {
 .secondary-item-title {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-/* identical to box height, or 120% */
-
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 111% */
+    
+    text-align: center;
     letter-spacing: 0.02em;
-
-/* NAVY BLUE */
-
+    text-transform: capitalize;
+    
+    /* NAVY BLUE */
+    
     color: #2E2F42;
     margin-bottom: 8px;
 }
@@ -273,6 +285,7 @@ img {
 
     font-family: 'Roboto';
     font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
 /* or 150% */
@@ -315,7 +328,7 @@ img {
 }
 .team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0 128px;
 }
 .team-item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -344,8 +357,11 @@ img {
 .team-list {
     list-style-type: none;
     display:flex;
-    flex-direction:row;
-    gap:24px;
+    flex-direction:column;
+    gap:72px;
+}
+.team-item {
+    margin: 0 auto;
 }
 .team-item-text {
     padding-top:32px;
@@ -354,20 +370,18 @@ img {
 }
 
 .team-item-title {
-/* Header 3 */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-/* identical to box height, or 120% */
-
+    /* identical to box height, or 120% */
+    
     text-align: center;
     letter-spacing: 0.02em;
-
-/* NAVY BLUE */
-
+    
+    /* NAVY BLUE */
+    
     color: #2E2F42;
     margin-bottom:8px;
     transition: text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
