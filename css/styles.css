@@ -88,14 +88,17 @@ img {
 }
 
 .mobile-menu {
+    position:absolute;
+    right: 16px;
     display: flex;
     width: 100%;
     height: 100%;
+    padding: 24px 0;
 }
 
 .mobile-icon {
-    background-color: black;
-    position:relative;
+    background-color: #FFFFFF;
+    stroke: black;
     display: flex;
     justify-content: center;
     align-items: center;
