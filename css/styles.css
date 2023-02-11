@@ -27,6 +27,7 @@ ul {
 }
 img {
     display:block;
+    margin: 0;
 }
 
 
@@ -454,6 +455,9 @@ img {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
 }
 .fourth-list {
     display:flex;
@@ -1130,20 +1134,101 @@ img {
 
 
 
-    .secondary-list{
+    .secondary-list {
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
-        flex-wrap:wrap;
-        column-gap: 24px;
-        row-gap: 72px;
+        column-gap:24px;
+        row-gap:72px;
+        flex-wrap: wrap;
+
     }
 
     .secondary-item {
-
+        width: calc( ( 100% - 24px ) / 2);
         height:120px;
     }
 
     .secondary-item-title{
         text-align: start;
+    }
+
+    .team {
+        padding: 96px 0 104px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap:24px;
+        row-gap:64px;
+        flex-wrap:wrap;
+    }
+
+    .team-item {
+        margin: 0;
+    }
+
+    .fourth {
+        padding: 96px 92px;
+    }
+
+    .fourth-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap:24px ;
+        row-gap: 72px;
+    }
+    .fourth-item {
+        width: calc((100% - 48px)/3);
+        height: 88px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        padding: 0 108px;
+    }
+    
+    .footer-info-column {
+        margin:0;
+    }
+
+    .footer-logo {
+        margin:0 0 16px;
+    }
+
+    .footer-description {
+        width:264px;
+    }
+
+    .footer-social-column {
+        margin: 0;
+    }
+
+    .footer-social-header {
+        text-align: start;
+    }
+
+    .footer-feedback-header {
+        text-align: start;
+    }
+
+    .footer-mail {
+        margin:0;
+        width: 264px;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        gap:24px;
     }
 }
