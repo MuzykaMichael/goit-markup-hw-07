@@ -1478,17 +1478,20 @@ img {
  
 @media screen and (min-width:1200px) {
     .container {
-        padding: 0 156px;
-        max-width: 100%;
-
+        padding: 0 15px;
+        max-width: 1158px;
+        margin: 0 auto;
     }
     
     .header-logo {
         margin-right: 76px;
     }
-
+    .header {
+        margin: 0 auto;
+        max-width: 1158px;
+    }
     .header-adress {
-        right:156px;
+        right:0;
         flex-direction: row;
         gap:40px;
     }
