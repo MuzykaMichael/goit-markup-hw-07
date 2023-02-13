@@ -1510,6 +1510,8 @@ img {
     }
     .hero {
         padding: 187px 0 188px;
+        max-width: 1440px;
+        margin:0 auto;
     }
     
     .hero-title {
@@ -1538,6 +1540,31 @@ img {
         flex-direction: column;
         width: calc( (100% - 24px) / 4);
         height:auto;
+    }
+    .secondary-item-title {
+        font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+letter-spacing: 0.02em;
+
+/* NAVY BLUE */
+
+color: #2E2F42;
+    }
+    .secondary-item-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+/* or 150% */
+
+        letter-spacing: 0.02em;
+
+/* SLATE */
+
+        color: #434455;
+
     }
     .secondary-item-link {
         display:flex;
